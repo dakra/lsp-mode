@@ -1386,33 +1386,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-sqls-server" class="md-nav__link">
-    lsp-sqls-server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-sqls-workspace-config-path" class="md-nav__link">
-    lsp-sqls-workspace-config-path
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1710,8 +1683,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/CPP-guide/" title="Configuring Emacs a C/C++ IDE" class="md-nav__link">
-      Configuring Emacs a C/C++ IDE
+    <a href="../../tutorials/CPP-guide/" title="Configuring Emacs as a C/C++ IDE" class="md-nav__link">
+      Configuring Emacs as a C/C++ IDE
     </a>
   </li>
 
@@ -1736,6 +1709,18 @@
   <li class="md-nav__item">
     <a href="../../tutorials/reactjs-tutorial/" title="React JavaScript Tutorial in Emacs" class="md-nav__link">
       React JavaScript Tutorial in Emacs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/clojure-guide/" title="Configuring Emacs as a Clojure IDE" class="md-nav__link">
+      Configuring Emacs as a Clojure IDE
     </a>
   </li>
 
@@ -1897,33 +1882,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-sqls-server" class="md-nav__link">
-    lsp-sqls-server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-sqls-workspace-config-path" class="md-nav__link">
-    lsp-sqls-workspace-config-path
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1947,6 +1905,13 @@
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <p><code>go get github.com/lighttiger2505/sqls</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<h1 id="sample-configuration">Sample configuration:<a class="headerlink" href="#sample-configuration" title="Permanent link">#</a></h1>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-connections</span>
+    <span class="o">&#39;</span><span class="p">(((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;mysql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;yyoncho:local@tcp(localhost:3306)/foo&quot;</span><span class="p">))</span>
+      <span class="p">((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;postgresql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;host=127.0.0.1 port=5432 user=yyoncho password=local dbname=sammy sslmode=disable&quot;</span><span class="p">))))</span>
+</code></pre></div>
+
+<p>After you have started the server you have pick server connection and database via <code>M-x lsp-execute-code-action</code> (or corresponding <code>M-x lsp-sqls-*</code>) command.</p>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
 <h3 id="lsp-sqls-server"><code>lsp-sqls-server</code><a class="headerlink" href="#lsp-sqls-server" title="Permanent link">#</a></h3>
 <p><em>Default: <code>sqls</code></em></p>
@@ -1956,6 +1921,14 @@
 <p><em>Default: <code>workspace</code></em></p>
 <p>If non-nil then setup workspace configuration with json file path.</p>
 <hr />
+<h3 id="lsp-sqls-timeout"><code>lsp-sqls-timeout</code><a class="headerlink" href="#lsp-sqls-timeout" title="Permanent link">#</a></h3>
+<p><em>Default: <code>0.5</code></em></p>
+<p>Timeout to use for ‘sqls’ requests.</p>
+<hr />
+<h3 id="lsp-sqls-connections"><code>lsp-sqls-connections</code><a class="headerlink" href="#lsp-sqls-connections" title="Permanent link">#</a></h3>
+<p><em>Default: <code>nil</code></em></p>
+<p>The connections to the SQL server(s).</p>
+<hr />
                 
                   
                     
@@ -1964,7 +1937,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 6, 2021</span>
     
   </small>
 </div>
