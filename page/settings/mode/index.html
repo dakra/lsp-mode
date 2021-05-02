@@ -1309,6 +1309,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-verify-signature" class="md-nav__link">
+    lsp-verify-signature
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-vscode-ext-url" class="md-nav__link">
     lsp-vscode-ext-url
   </a>
@@ -1497,6 +1504,19 @@
   <li class="md-nav__item">
     <a href="https://github.com/emacs-lsp/lsp-ivy" class="md-nav__link">
       Ivy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="https://github.com/gagbo/consult-lsp" class="md-nav__link">
+      Consult
     </a>
   </li>
 
@@ -3530,6 +3550,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-verify-signature" class="md-nav__link">
+    lsp-verify-signature
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-vscode-ext-url" class="md-nav__link">
     lsp-vscode-ext-url
   </a>
@@ -3642,7 +3669,7 @@ before saving a document.</p>
 <hr />
 <h3 id="lsp-client-packages"><code>lsp-client-packages</code><a class="headerlink" href="#lsp-client-packages" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat symbol)</code></p>
-<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-bash lsp-clangd lsp-clojure lsp-cmake lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-dockerfile lsp-elm lsp-elixir lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-java lsp-javascript lsp-json lsp-kotlin lsp-lua lsp-nim lsp-nix lsp-metals lsp-ocaml lsp-perl lsp-php lsp-pwsh lsp-pyls lsp-python-ms lsp-purescript lsp-r lsp-rf lsp-rust lsp-solargraph lsp-sorbet lsp-tex lsp-terraform lsp-vala lsp-verilog lsp-vetur lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-sqls lsp-svelte lsp-steep lsp-zig)</code></p>
+<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-bash lsp-clangd lsp-clojure lsp-cmake lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-dockerfile lsp-elm lsp-elixir lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-java lsp-javascript lsp-json lsp-kotlin lsp-lua lsp-markdown lsp-nim lsp-nix lsp-metals lsp-ocaml lsp-perl lsp-php lsp-pwsh lsp-pyls lsp-python-ms lsp-purescript lsp-r lsp-rf lsp-rust lsp-solargraph lsp-sorbet lsp-tex lsp-terraform lsp-vala lsp-verilog lsp-vetur lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-sqls lsp-svelte lsp-steep lsp-zig)</code></p>
 <p>List of the clients to be automatically required.</p>
 <hr />
 <h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
@@ -4021,6 +4048,11 @@ namespace SymbolKind.</p>
 <p><em>Default:</em> <code>bash -c 'mkdir -p %2$s &amp;&amp; unzip -qq -o %1$s -d %2$s'</code></p>
 <p>The script to unzip.</p>
 <hr />
+<h3 id="lsp-verify-signature"><code>lsp-verify-signature</code><a class="headerlink" href="#lsp-verify-signature" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Whether to check GPG signatures of downloaded files.</p>
+<hr />
 <h3 id="lsp-vscode-ext-url"><code>lsp-vscode-ext-url</code><a class="headerlink" href="#lsp-vscode-ext-url" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>https://marketplace.visualstudio.com/_apis/public/gallery/publishers/%s/vsextensions/%s/%s/vspackage</code></p>
@@ -4040,7 +4072,7 @@ The hook will receive two parameters list of added and removed folders.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 22, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 2, 2021</span>
     
   </small>
 </div>

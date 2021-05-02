@@ -30,7 +30,7 @@
     "server-name": "bash-language-server",
     "server-url": "https://github.com/mads-hartmann/bash-language-server",
     "installation": "npm i -g bash-language-server",
-    "lsp-install-server": "bash",
+    "lsp-install-server": "bash-ls",
     "debugger": "Not available"
   },
   {
@@ -176,6 +176,14 @@
     "server-name": "godot",
     "server-url": "https://github.com/godotengine/godot",
     "installation-url": "https://github.com/godotengine/godot",
+    "debugger": "Not available"
+  },
+  {
+    "name": "gettext",
+    "full-name": "gettext",
+    "server-name": "po-language-server",
+    "server-url": "https://github.com/JulienPalard/po-language-server",
+    "installation-url": "https://github.com/JulienPalard/po-language-server",
     "debugger": "Not available"
   },
   {
