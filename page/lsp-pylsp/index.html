@@ -6,28 +6,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Language Server Protocol support with multiples languages support for Emacs">
+        <meta name="description" content="Language Server Protocol Support for Emacs">
       
       
       
         <meta name="author" content="ercdll1337@gmail.com">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-pylsp/">
       
-      <link rel="shortcut icon" href="examples/logo-mini.png">
+      <link rel="shortcut icon" href="../../examples/logo-mini.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.4">
     
     
       
-        <title>LSP Mode - Language Server Protocol support for Emacs - LSP Mode - LSP support for Emacs</title>
+        <title>Lsp pylsp - LSP Mode - LSP support for Emacs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.15aa0b43.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.75751829.min.css">
         
       
     
@@ -42,9 +42,9 @@
     
     
     
-      <link rel="stylesheet" href="stylesheets/layout.css">
+      <link rel="stylesheet" href="../../stylesheets/layout.css">
     
-      <link rel="stylesheet" href="stylesheets/members.css">
+      <link rel="stylesheet" href="../../stylesheets/members.css">
     
     
       
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#language-server-protocol-support-for-emacs" class="md-skip">
+        <a href="#python" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://emacs-lsp.github.io/lsp-mode" title="LSP Mode - LSP support for Emacs" class="md-header-nav__button md-logo" aria-label="LSP Mode - LSP support for Emacs">
       
-  <img src="examples/logo-mini.png" alt="logo">
+  <img src="../../examples/logo-mini.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -103,7 +103,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              LSP Mode - Language Server Protocol support for Emacs
+              Lsp pylsp
             
           </span>
         </div>
@@ -169,15 +169,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     </li>
@@ -198,7 +196,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="page/settings/mode/" class="md-tabs__link">
+      <a href="../settings/mode/" class="md-tabs__link">
         Settings
       </a>
     </li>
@@ -216,7 +214,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="page/languages/" class="md-tabs__link">
+      <a href="../languages/" class="md-tabs__link">
         Languages
       </a>
     </li>
@@ -248,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="page/gallery/" class="md-tabs__link">
+      <a href="../gallery/" class="md-tabs__link">
         Gallery
       </a>
     </li>
@@ -264,7 +262,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="page/CHANGELOG/" class="md-tabs__link">
+      <a href="../CHANGELOG/" class="md-tabs__link">
         Changelog
       </a>
     </li>
@@ -280,7 +278,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="tutorials/CPP-guide/" class="md-tabs__link">
+      <a href="../../tutorials/CPP-guide/" class="md-tabs__link">
         Tutorials
       </a>
     </li>
@@ -301,7 +299,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="blog/2020/7.0-release/" class="md-tabs__link">
+      <a href="../../blog/2020/7.0-release/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -350,7 +348,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://emacs-lsp.github.io/lsp-mode" title="LSP Mode - LSP support for Emacs" class="md-nav__button md-logo" aria-label="LSP Mode - LSP support for Emacs">
       
-  <img src="examples/logo-mini.png" alt="logo">
+  <img src="../../examples/logo-mini.png" alt="logo">
 
     </a>
     LSP Mode - LSP support for Emacs
@@ -376,14 +374,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" >
     
     <label class="md-nav__link" for="nav-1">
       Home
@@ -402,97 +398,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Overview
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="." class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
       Overview
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why" class="md-nav__link">
-    Why?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#presentationsdemos" class="md-nav__link">
-    Presentations/demos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributions" class="md-nav__link">
-    Contributions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support-the-project" class="md-nav__link">
-    Support the project
-  </a>
-  
-    <nav class="md-nav" aria-label="Support the project">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
-    Members
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -527,7 +437,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/installation/" class="md-nav__link">
+    <a href="../installation/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -540,7 +450,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/performance/" class="md-nav__link">
+    <a href="../performance/" class="md-nav__link">
       Performance
     </a>
   </li>
@@ -558,7 +468,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/main-features/" class="md-nav__link">
+    <a href="../main-features/" class="md-nav__link">
       Main features
     </a>
   </li>
@@ -571,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/keybindings/" class="md-nav__link">
+    <a href="../keybindings/" class="md-nav__link">
       Keybindings
     </a>
   </li>
@@ -660,7 +570,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/integration/iedit/" class="md-nav__link">
+    <a href="../integration/iedit/" class="md-nav__link">
       Iedit
     </a>
   </li>
@@ -673,7 +583,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/integration/ido/" class="md-nav__link">
+    <a href="../integration/ido/" class="md-nav__link">
       Ido
     </a>
   </li>
@@ -691,7 +601,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/file-watchers/" class="md-nav__link">
+    <a href="../file-watchers/" class="md-nav__link">
       File watchers
     </a>
   </li>
@@ -704,7 +614,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/remote/" class="md-nav__link">
+    <a href="../remote/" class="md-nav__link">
       Remote
     </a>
   </li>
@@ -717,7 +627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/faq/" class="md-nav__link">
+    <a href="../faq/" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -730,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/troubleshooting/" class="md-nav__link">
+    <a href="../troubleshooting/" class="md-nav__link">
       Troubleshooting
     </a>
   </li>
@@ -743,7 +653,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/adding-new-language/" class="md-nav__link">
+    <a href="../adding-new-language/" class="md-nav__link">
       Adding new language
     </a>
   </li>
@@ -809,7 +719,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/mode/" class="md-nav__link">
+    <a href="../settings/mode/" class="md-nav__link">
       Core
     </a>
   </li>
@@ -822,7 +732,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/completion/" class="md-nav__link">
+    <a href="../settings/completion/" class="md-nav__link">
       Completion
     </a>
   </li>
@@ -835,7 +745,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/diagnostics/" class="md-nav__link">
+    <a href="../settings/diagnostics/" class="md-nav__link">
       Diagnostics
     </a>
   </li>
@@ -848,7 +758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/headerline/" class="md-nav__link">
+    <a href="../settings/headerline/" class="md-nav__link">
       Headerline
     </a>
   </li>
@@ -861,7 +771,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/modeline/" class="md-nav__link">
+    <a href="../settings/modeline/" class="md-nav__link">
       Modeline
     </a>
   </li>
@@ -874,7 +784,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/lens/" class="md-nav__link">
+    <a href="../settings/lens/" class="md-nav__link">
       Lens
     </a>
   </li>
@@ -887,7 +797,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/icons/" class="md-nav__link">
+    <a href="../settings/icons/" class="md-nav__link">
       Icons
     </a>
   </li>
@@ -900,7 +810,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/semantic-tokens/" class="md-nav__link">
+    <a href="../settings/semantic-tokens/" class="md-nav__link">
       Semantic Tokens
     </a>
   </li>
@@ -1007,7 +917,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/dired/" class="md-nav__link">
+    <a href="../settings/dired/" class="md-nav__link">
       Dired
     </a>
   </li>
@@ -1020,7 +930,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/iedit/" class="md-nav__link">
+    <a href="../settings/iedit/" class="md-nav__link">
       Iedit
     </a>
   </li>
@@ -1033,7 +943,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/settings/ido/" class="md-nav__link">
+    <a href="../settings/ido/" class="md-nav__link">
       Ido
     </a>
   </li>
@@ -1080,7 +990,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/languages/" class="md-nav__link">
+    <a href="../languages/" class="md-nav__link">
       Languages
     </a>
   </li>
@@ -1093,7 +1003,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-actionscript/" class="md-nav__link">
+    <a href="../lsp-actionscript/" class="md-nav__link">
       ActionScript
     </a>
   </li>
@@ -1106,7 +1016,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-ada/" class="md-nav__link">
+    <a href="../lsp-ada/" class="md-nav__link">
       Ada
     </a>
   </li>
@@ -1119,7 +1029,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-angular/" class="md-nav__link">
+    <a href="../lsp-angular/" class="md-nav__link">
       Angular
     </a>
   </li>
@@ -1132,7 +1042,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-bash/" class="md-nav__link">
+    <a href="../lsp-bash/" class="md-nav__link">
       Bash
     </a>
   </li>
@@ -1145,7 +1055,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-ccls/" class="md-nav__link">
+    <a href="../lsp-ccls/" class="md-nav__link">
       C++ (ccls)
     </a>
   </li>
@@ -1158,7 +1068,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-clangd/" class="md-nav__link">
+    <a href="../lsp-clangd/" class="md-nav__link">
       C++ (clangd)
     </a>
   </li>
@@ -1171,7 +1081,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-csharp/" class="md-nav__link">
+    <a href="../lsp-csharp/" class="md-nav__link">
       C#
     </a>
   </li>
@@ -1184,7 +1094,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-clojure/" class="md-nav__link">
+    <a href="../lsp-clojure/" class="md-nav__link">
       Clojure
     </a>
   </li>
@@ -1197,7 +1107,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-cmake/" class="md-nav__link">
+    <a href="../lsp-cmake/" class="md-nav__link">
       CMake
     </a>
   </li>
@@ -1210,7 +1120,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-crystal/" class="md-nav__link">
+    <a href="../lsp-crystal/" class="md-nav__link">
       Crystal
     </a>
   </li>
@@ -1223,7 +1133,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-css/" class="md-nav__link">
+    <a href="../lsp-css/" class="md-nav__link">
       CSS/LessCSS/SASS/SCSS
     </a>
   </li>
@@ -1236,7 +1146,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-d/" class="md-nav__link">
+    <a href="../lsp-d/" class="md-nav__link">
       D
     </a>
   </li>
@@ -1262,7 +1172,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-dhall/" class="md-nav__link">
+    <a href="../lsp-dhall/" class="md-nav__link">
       Dhall
     </a>
   </li>
@@ -1275,7 +1185,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-dockerfile/" class="md-nav__link">
+    <a href="../lsp-dockerfile/" class="md-nav__link">
       Dockerfile
     </a>
   </li>
@@ -1288,7 +1198,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-elixir/" class="md-nav__link">
+    <a href="../lsp-elixir/" class="md-nav__link">
       Elixir
     </a>
   </li>
@@ -1301,7 +1211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-elm/" class="md-nav__link">
+    <a href="../lsp-elm/" class="md-nav__link">
       Elm
     </a>
   </li>
@@ -1314,7 +1224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-erlang/" class="md-nav__link">
+    <a href="../lsp-erlang/" class="md-nav__link">
       Erlang
     </a>
   </li>
@@ -1327,7 +1237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-eslint/" class="md-nav__link">
+    <a href="../lsp-eslint/" class="md-nav__link">
       Eslint
     </a>
   </li>
@@ -1340,7 +1250,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-fsharp/" class="md-nav__link">
+    <a href="../lsp-fsharp/" class="md-nav__link">
       F#
     </a>
   </li>
@@ -1353,7 +1263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-fortran/" class="md-nav__link">
+    <a href="../lsp-fortran/" class="md-nav__link">
       Fortran
     </a>
   </li>
@@ -1366,7 +1276,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-gdscript/" class="md-nav__link">
+    <a href="../lsp-gdscript/" class="md-nav__link">
       GDScript
     </a>
   </li>
@@ -1379,7 +1289,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-gopls/" class="md-nav__link">
+    <a href="../lsp-gopls/" class="md-nav__link">
       Go (gopls)
     </a>
   </li>
@@ -1392,7 +1302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-grammarly/" class="md-nav__link">
+    <a href="../lsp-grammarly/" class="md-nav__link">
       Grammarly
     </a>
   </li>
@@ -1405,7 +1315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-groovy/" class="md-nav__link">
+    <a href="../lsp-groovy/" class="md-nav__link">
       Groovy
     </a>
   </li>
@@ -1418,7 +1328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-hack/" class="md-nav__link">
+    <a href="../lsp-hack/" class="md-nav__link">
       Hack
     </a>
   </li>
@@ -1431,7 +1341,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-html/" class="md-nav__link">
+    <a href="../lsp-html/" class="md-nav__link">
       HTML
     </a>
   </li>
@@ -1470,7 +1380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-deno/" class="md-nav__link">
+    <a href="../lsp-deno/" class="md-nav__link">
       Javascript/Typescript (deno)
     </a>
   </li>
@@ -1483,7 +1393,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-typescript-javascript/" class="md-nav__link">
+    <a href="../lsp-typescript-javascript/" class="md-nav__link">
       JavaScript/TypeScript (sourcegraph)
     </a>
   </li>
@@ -1496,7 +1406,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-typescript/" class="md-nav__link">
+    <a href="../lsp-typescript/" class="md-nav__link">
       JavaScript/TypeScript (theia-ide)
     </a>
   </li>
@@ -1509,7 +1419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-flow/" class="md-nav__link">
+    <a href="../lsp-flow/" class="md-nav__link">
       JavaScript Flow
     </a>
   </li>
@@ -1522,7 +1432,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-json/" class="md-nav__link">
+    <a href="../lsp-json/" class="md-nav__link">
       Json
     </a>
   </li>
@@ -1535,7 +1445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-julia/" class="md-nav__link">
+    <a href="../lsp-julia/" class="md-nav__link">
       Julia
     </a>
   </li>
@@ -1548,7 +1458,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-kotlin/" class="md-nav__link">
+    <a href="../lsp-kotlin/" class="md-nav__link">
       Kotlin
     </a>
   </li>
@@ -1561,7 +1471,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-emmy-lua/" class="md-nav__link">
+    <a href="../lsp-emmy-lua/" class="md-nav__link">
       Lua (EmmyLua)
     </a>
   </li>
@@ -1574,7 +1484,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-lua-language-server/" class="md-nav__link">
+    <a href="../lsp-lua-language-server/" class="md-nav__link">
       Lua (Lua Language Server)
     </a>
   </li>
@@ -1587,7 +1497,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-lua-lsp/" class="md-nav__link">
+    <a href="../lsp-lua-lsp/" class="md-nav__link">
       Lua (Lua-Lsp)
     </a>
   </li>
@@ -1600,7 +1510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-markdown/" class="md-nav__link">
+    <a href="../lsp-markdown/" class="md-nav__link">
       Markdown
     </a>
   </li>
@@ -1626,7 +1536,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-nim/" class="md-nav__link">
+    <a href="../lsp-nim/" class="md-nav__link">
       Nim
     </a>
   </li>
@@ -1639,7 +1549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-nix/" class="md-nav__link">
+    <a href="../lsp-nix/" class="md-nav__link">
       Nix
     </a>
   </li>
@@ -1652,7 +1562,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-ocaml/" class="md-nav__link">
+    <a href="../lsp-ocaml/" class="md-nav__link">
       OCaml (ocaml)
     </a>
   </li>
@@ -1665,7 +1575,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-ocaml-lsp-server/" class="md-nav__link">
+    <a href="../lsp-ocaml-lsp-server/" class="md-nav__link">
       OCaml (ocaml-lsp)
     </a>
   </li>
@@ -1678,7 +1588,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-pascal/" class="md-nav__link">
+    <a href="../lsp-pascal/" class="md-nav__link">
       Pascal/Object Pascal
     </a>
   </li>
@@ -1691,7 +1601,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-perl/" class="md-nav__link">
+    <a href="../lsp-perl/" class="md-nav__link">
       Perl
     </a>
   </li>
@@ -1704,7 +1614,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-intelephense/" class="md-nav__link">
+    <a href="../lsp-intelephense/" class="md-nav__link">
       PHP (intelephense)
     </a>
   </li>
@@ -1717,7 +1627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-serenata/" class="md-nav__link">
+    <a href="../lsp-serenata/" class="md-nav__link">
       PHP (Serenata)
     </a>
   </li>
@@ -1730,7 +1640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-php/" class="md-nav__link">
+    <a href="../lsp-php/" class="md-nav__link">
       PHP (felixbecker)
     </a>
   </li>
@@ -1743,7 +1653,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-phpactor/" class="md-nav__link">
+    <a href="../lsp-phpactor/" class="md-nav__link">
       PHP (phpactor)
     </a>
   </li>
@@ -1756,7 +1666,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-pwsh/" class="md-nav__link">
+    <a href="../lsp-pwsh/" class="md-nav__link">
       Powershell
     </a>
   </li>
@@ -1769,7 +1679,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-prolog/" class="md-nav__link">
+    <a href="../lsp-prolog/" class="md-nav__link">
       Prolog
     </a>
   </li>
@@ -1782,7 +1692,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-purescript/" class="md-nav__link">
+    <a href="../lsp-purescript/" class="md-nav__link">
       PureScript
     </a>
   </li>
@@ -1795,7 +1705,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-jedi/" class="md-nav__link">
+    <a href="../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
   </li>
@@ -1808,7 +1718,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-pyls/" class="md-nav__link">
+    <a href="../lsp-pyls/" class="md-nav__link">
       Python (Palantir)
     </a>
   </li>
@@ -1847,7 +1757,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-r/" class="md-nav__link">
+    <a href="../lsp-r/" class="md-nav__link">
       R
     </a>
   </li>
@@ -1860,7 +1770,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-racket-langserver/" class="md-nav__link">
+    <a href="../lsp-racket-langserver/" class="md-nav__link">
       Racket (jeapostrophe)
     </a>
   </li>
@@ -1873,7 +1783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-racket-language-server/" class="md-nav__link">
+    <a href="../lsp-racket-language-server/" class="md-nav__link">
       Racket (Theia)
     </a>
   </li>
@@ -1886,7 +1796,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-solargraph/" class="md-nav__link">
+    <a href="../lsp-solargraph/" class="md-nav__link">
       Ruby
     </a>
   </li>
@@ -1899,7 +1809,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-rust/" class="md-nav__link">
+    <a href="../lsp-rust/" class="md-nav__link">
       Rust
     </a>
   </li>
@@ -1925,7 +1835,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-sqls/" class="md-nav__link">
+    <a href="../lsp-sqls/" class="md-nav__link">
       SQL (sqls)
     </a>
   </li>
@@ -1938,7 +1848,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-svelte/" class="md-nav__link">
+    <a href="../lsp-svelte/" class="md-nav__link">
       Svelte
     </a>
   </li>
@@ -1964,7 +1874,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-terraform/" class="md-nav__link">
+    <a href="../lsp-terraform/" class="md-nav__link">
       Terraform
     </a>
   </li>
@@ -1977,7 +1887,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-tex/" class="md-nav__link">
+    <a href="../lsp-tex/" class="md-nav__link">
       TeX, LaTeX, etc (digestif)
     </a>
   </li>
@@ -1990,7 +1900,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-texlab/" class="md-nav__link">
+    <a href="../lsp-texlab/" class="md-nav__link">
       TeX, LaTeX, etc (texlab)
     </a>
   </li>
@@ -2003,7 +1913,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-latex/" class="md-nav__link">
+    <a href="../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
     </a>
   </li>
@@ -2016,7 +1926,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-vala/" class="md-nav__link">
+    <a href="../lsp-vala/" class="md-nav__link">
       Vala
     </a>
   </li>
@@ -2029,7 +1939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-verilog/" class="md-nav__link">
+    <a href="../lsp-verilog/" class="md-nav__link">
       Verilog/SystemVerilog (hdl-checker)
     </a>
   </li>
@@ -2042,7 +1952,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-svlangserver/" class="md-nav__link">
+    <a href="../lsp-svlangserver/" class="md-nav__link">
       Verilog/SystemVerilog (svlangserver)
     </a>
   </li>
@@ -2055,7 +1965,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-vhdl/" class="md-nav__link">
+    <a href="../lsp-vhdl/" class="md-nav__link">
       VHDL
     </a>
   </li>
@@ -2068,7 +1978,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-vim/" class="md-nav__link">
+    <a href="../lsp-vim/" class="md-nav__link">
       Vimscript
     </a>
   </li>
@@ -2081,7 +1991,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-vetur/" class="md-nav__link">
+    <a href="../lsp-vetur/" class="md-nav__link">
       Vue
     </a>
   </li>
@@ -2094,7 +2004,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-xml/" class="md-nav__link">
+    <a href="../lsp-xml/" class="md-nav__link">
       XML
     </a>
   </li>
@@ -2107,7 +2017,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-yaml/" class="md-nav__link">
+    <a href="../lsp-yaml/" class="md-nav__link">
       YAML
     </a>
   </li>
@@ -2120,7 +2030,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/lsp-zig/" class="md-nav__link">
+    <a href="../lsp-zig/" class="md-nav__link">
       Zig
     </a>
   </li>
@@ -2204,7 +2114,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/gallery/" class="md-nav__link">
+    <a href="../gallery/" class="md-nav__link">
       Gallery
     </a>
   </li>
@@ -2246,7 +2156,7 @@
 
 
   <li class="md-nav__item">
-    <a href="page/CHANGELOG/" class="md-nav__link">
+    <a href="../CHANGELOG/" class="md-nav__link">
       Changelog
     </a>
   </li>
@@ -2288,7 +2198,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/CPP-guide/" class="md-nav__link">
+    <a href="../../tutorials/CPP-guide/" class="md-nav__link">
       Configuring Emacs as a C/C++ IDE
     </a>
   </li>
@@ -2301,7 +2211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/how-to-turn-off/" class="md-nav__link">
+    <a href="../../tutorials/how-to-turn-off/" class="md-nav__link">
       A guide on disabling/enabling lsp-mode features
     </a>
   </li>
@@ -2314,7 +2224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/reactjs-tutorial/" class="md-nav__link">
+    <a href="../../tutorials/reactjs-tutorial/" class="md-nav__link">
       React JavaScript Tutorial in Emacs
     </a>
   </li>
@@ -2327,7 +2237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/clojure-guide/" class="md-nav__link">
+    <a href="../../tutorials/clojure-guide/" class="md-nav__link">
       Configuring Emacs as a Clojure IDE
     </a>
   </li>
@@ -2340,7 +2250,7 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/debugging-clojure-script/" class="md-nav__link">
+    <a href="../../tutorials/debugging-clojure-script/" class="md-nav__link">
       Debugging Clojurescript
     </a>
   </li>
@@ -2406,7 +2316,7 @@
 
 
   <li class="md-nav__item">
-    <a href="blog/2020/7.0-release/" class="md-nav__link">
+    <a href="../../blog/2020/7.0-release/" class="md-nav__link">
       7.0 Release
     </a>
   </li>
@@ -2489,51 +2399,407 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why" class="md-nav__link">
-    Why?
+  <a href="#server" class="md-nav__link">
+    Server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#presentationsdemos" class="md-nav__link">
-    Presentations/demos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributions" class="md-nav__link">
-    Contributions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support-the-project" class="md-nav__link">
-    Support the project
-  </a>
-  
-    <nav class="md-nav" aria-label="Support the project">
+    <nav class="md-nav" aria-label="Installation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
-    Members
+  <a href="#debugger-yes" class="md-nav__link">
+    Debugger: Yes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-clients-pylsp-library-directories" class="md-nav__link">
+    lsp-clients-pylsp-library-directories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-configuration-sources" class="md-nav__link">
+    lsp-pylsp-configuration-sources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-autopep8-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-autopep8-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-config" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-exclude" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-exclude
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-filename" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-filename
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-hang-closing" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-hang-closing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-ignore" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-max-line-length" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-max-line-length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-flake8-select" class="md-nav__link">
+    lsp-pylsp-plugins-flake8-select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-completion-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-completion-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-completion-fuzzy" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-completion-fuzzy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-completion-include-class-objects" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-completion-include-class-objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-completion-include-params" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-completion-include-params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-definition-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-definition-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-definition-follow-builtin-imports" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-definition-follow-builtin-imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-definition-follow-imports" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-definition-follow-imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-environment" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-hover-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-hover-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-references-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-references-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-signature-help-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-signature-help-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-symbols-all-scopes" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-symbols-all-scopes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-symbols-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-symbols-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-jedi-use-pyenv-environment" class="md-nav__link">
+    lsp-pylsp-plugins-jedi-use-pyenv-environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-mccabe-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-mccabe-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-mccabe-threshold" class="md-nav__link">
+    lsp-pylsp-plugins-mccabe-threshold
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-preload-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-preload-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-preload-modules" class="md-nav__link">
+    lsp-pylsp-plugins-preload-modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-exclude" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-exclude
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-filename" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-filename
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-hang-closing" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-hang-closing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-ignore" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-max-line-length" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-max-line-length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pycodestyle-select" class="md-nav__link">
+    lsp-pylsp-plugins-pycodestyle-select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-add-ignore" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-add-ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-add-select" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-add-select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-convention" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-convention
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-ignore" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-ignore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-match" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-match
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-match-dir" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-match-dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pydocstyle-select" class="md-nav__link">
+    lsp-pylsp-plugins-pydocstyle-select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pyflakes-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-pyflakes-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pylint-args" class="md-nav__link">
+    lsp-pylsp-plugins-pylint-args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-pylint-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-pylint-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-rope-completion-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-rope-completion-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-plugins-yapf-enabled" class="md-nav__link">
+    lsp-pylsp-plugins-yapf-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-rename-backend" class="md-nav__link">
+    lsp-pylsp-rename-backend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-rope-extension-modules" class="md-nav__link">
+    lsp-pylsp-rope-extension-modules
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-rope-rope-folder" class="md-nav__link">
+    lsp-pylsp-rope-rope-folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pylsp-server-command" class="md-nav__link">
+    lsp-pylsp-server-command
   </a>
   
 </li>
@@ -2555,259 +2821,318 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/README.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-pylsp.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <p><a href="https://melpa.org/#/lsp-mode"><img alt="" src="https://melpa.org/packages/lsp-mode-badge.svg" /></a>
-<a href="https://stable.melpa.org/#/lsp-mode"><img alt="" src="https://stable.melpa.org/packages/lsp-mode-badge.svg" /></a>
-<a href="https://discord.gg/swuxy5AAgT"><img alt="" src="https://discordapp.com/api/guilds/789885435026604033/widget.png?style=shield" /></a>
-<a href="https://github.com/emacs-lsp/lsp-mode/actions?query=workflow%3ACI"><img alt="" src="https://github.com/emacs-lsp/lsp-mode/workflows/CI/badge.svg" /></a></p>
-<p><img src="examples/logo.png" width="240" align="right"></p>
-<h1 id="language-server-protocol-support-for-emacs">Language Server Protocol Support for Emacs<a class="headerlink" href="#language-server-protocol-support-for-emacs" title="Permanent link">#</a></h1>
-<p><img alt="LSP mode" src="examples/head.png" /></p>
-<hr>
-<p align="center">
-  <a href="https://emacs-lsp.github.io/lsp-mode"><strong>homepage</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/installation"><strong>installation</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/languages"><strong>languages</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/settings/mode/"><strong>settings</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/"><strong>tutorials</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/troubleshooting"><strong>troubleshooting</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/gallery"><strong>screenshots</strong></a> •
-  <a href="https://emacs-lsp.github.io/lsp-mode/page/faq"><strong>FAQ</strong></a>
-</p>
-<hr>
-
-<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">#</a></h2>
-<ul>
-<li><img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /> <strong>Community Driven</strong></li>
-<li><img alt="💎" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f48e.svg" title=":gem:" /> <strong>Fully featured</strong> - supports <strong>all</strong> features in Language Server Protocol v3.14.</li>
-<li><img alt="🚀" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f680.svg" title=":rocket:" /> <strong>Fast</strong> - see <a href="https://emacs-lsp.github.io/lsp-mode/page/performance">performance section</a>.</li>
-<li><img alt="🌟" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f31f.svg" title=":star2:" /> <strong>Flexible</strong> - choose between full-blown IDE with flashy UI or minimal distraction free.</li>
-<li><img alt="⚙" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2699.svg" title=":gear:" /> <strong>Easy to configure</strong> - works out of the box and automatically upgrades if additional packages are present.</li>
-</ul>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
-<p>Client for <a href="https://github.com/Microsoft/language-server-protocol/">Language Server
-Protocol</a>
-(v3.14). <a href="https://emacs-lsp.github.io/lsp-mode">lsp-mode</a> aims to
-provide IDE-like experience by providing optional integration with the
-most popular Emacs packages like <code>company</code>, <code>flycheck</code> and <code>projectile</code>.</p>
-<ul>
-<li>Non-blocking asynchronous calls</li>
-<li>Real-time Diagnostics/linting via
-    <a href="https://github.com/flycheck/flycheck">flycheck</a> (recommended) or
-    <code>flymake</code> when Emacs > 26 (requires flymake>=1.0.5)</li>
-<li>Code completion - <code>company-capf</code> / <code>completion-at-point</code> (note that
-    <a href="https://github.com/tigersoldier/company-lsp">company-lsp</a> is no
-    longer supported).</li>
-<li>Hovers - using <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a></li>
-<li>Code actions - via <code>lsp-execute-code-action</code>, <a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#code-actions-on-modeline">modeline</a> (recommended) or <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> sideline.</li>
-<li>Code outline - using builtin
-    <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Imenu.html">imenu</a>
-    or <code>helm-imenu</code></li>
-<li>Code navigation - using builtin
-    <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Xref.html">xref</a>,
-    <a href="https://github.com/emacs-lsp/lsp-treemacs">lsp-treemacs</a> tree views
-    or <a href="https://emacs-lsp.github.io/lsp-ui">lsp-ui</a> peek functions.</li>
-<li>Code lens</li>
-<li>Symbol highlights</li>
-<li>Formatting</li>
-<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#project-errors-on-modeline">Project errors</a> on modeline</li>
-<li>Debugger - <a href="https://emacs-lsp.github.io/dap-mode/">dap-mode</a></li>
-<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#breadcrumb-on-headerline">Breadcrumb on headerline</a></li>
-<li>Helm integration -
-    <a href="https://github.com/emacs-lsp/helm-lsp/">helm-lsp</a></li>
-<li>Ivy integration - <a href="https://github.com/emacs-lsp/lsp-ivy/">lsp-ivy</a></li>
-<li>Consult integration - <a href="https://github.com/gagbo/consult-lsp">consult-lsp</a></li>
-<li>Treemacs integration -
-    <a href="https://github.com/emacs-lsp/lsp-treemacs">lsp-treemacs</a></li>
-<li>Semantic tokens as defined by LSP 3.16 (compatible language servers include recent development builds of clangd and rust-analyzer)</li>
-<li><a href="https://github.com/justbur/emacs-which-key/">which-key</a> integration
-    for better discovery</li>
-<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#iedit">iedit</a></li>
-<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#dired">dired</a></li>
-<li><a href="https://emacs-lsp.github.io/lsp-mode/page/main-features/#integrations">ido</a></li>
-</ul>
-<h2 id="presentationsdemos">Presentations/demos<a class="headerlink" href="#presentationsdemos" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="https://twitter.com/SystemCrafters">System Crafters</a> channel
-    <a href="https://www.youtube.com/playlist?list=PLEoMzSkcN8oNvsrtk_iZSb94krGRofFjN">Emacs IDE Videos</a></li>
-<li><a href="https://github.com/skybert">skybert</a>'s emacsconf
-    <a href="https://media.emacsconf.org/2019/19.html">presentation</a> (Java)</li>
-<li><a href="https://github.com/thatwist">thatwist</a>'s ScalaUA Conference
-    <a href="https://www.youtube.com/watch?v=x7ey0ifcqAg&amp;feature=youtu.be">presentation</a>
-    (Scala)</li>
-</ul>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="https://github.com/emacs-lsp/lsp-docker/">lsp-docker</a> - provide
-    docker image with preconfigured language servers with corresponding
-    emacs configuration.</li>
-<li><a href="https://github.com/sebastiencs/company-box/">company-box</a> -
-    <code>company</code> frontend with icons.</li>
-<li><a href="https://github.com/emacs-lsp/dap-mode">dap-mode</a> - Debugger
-    integration for <code>lsp-mode</code>.</li>
-<li><a href="https://github.com/joaotavora/eglot">eglot</a> - An alternative
-    minimal LSP implementation.</li>
-<li><a href="https://github.com/justbur/emacs-which-key/">which-key</a> - Emacs
-    package that displays available keybindings in popup</li>
-<li><a href="https://github.com/bbatsov/projectile/">projectile</a> - Project
-    Interaction Library for Emacs</li>
-<li><a href="https://github.com/ubolonton/emacs-tree-sitter">emacs-tree-sitter</a> - Faster, fine-grained code highlighting via <a href="https://github.com/tree-sitter/tree-sitter">tree-sitter</a>.</li>
-<li><a href="https://akrl.sdf.org/gccemacs.html">gccemacs</a> - modified Emacs capable of compiling and running Emacs Lisp as native code.</li>
-</ul>
-<h2 id="contributions">Contributions<a class="headerlink" href="#contributions" title="Permanent link">#</a></h2>
-<p>Contributions are very much welcome.</p>
-<h2 id="support-the-project">Support the project<a class="headerlink" href="#support-the-project" title="Permanent link">#</a></h2>
-<p>The <code>emacs-lsp</code> organization has more than <strong>20.000 lines of code</strong>, to keep all of this working,
-we need to implement new features and help the community on a lot of issues.</p>
-<p>You can help us keep going and improving it by <strong><a href="https://opencollective.com/emacs-lsp">supporting the project</a></strong></p>
-<p><a href="https://opencollective.com/emacs-lsp"><img src="https://opencollective.com/emacs-lsp/tiers/backer.svg" /></a></p>
-<h3 id="members">Members<a class="headerlink" href="#members" title="Permanent link">#</a></h3>
-<p>Here it is a list of the current <code>lsp-mode</code> members and what they are
-primary working on/responsible for.</p>
-<table id="emacs-lsp-members">
-  <tr>
-    <td align="center">
-      <div>
-        <a href="https://github.com/totbwf">
-          <img src="https://github.com/totbwf.png" width="100px;" style="border-radius: 50%;" alt="totbwf"/>
-          <br/>
-          <sub><b>totbwf</b></sub>
-        </a>
-        <br/>
-        F#
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/brotzeit">
-          <img src="https://github.com/brotzeit.png" width="100px;" style="border-radius: 50%;" alt="brotzeit"/>
-          <br/>
-          <sub><b>brotzeit</b></sub>
-        </a>
-        <br/>
-        Rust
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/dsyzling">
-          <img src="https://github.com/dsyzling.png" width="100px;" style="border-radius: 50%;" alt="dsyzling"/>
-          <br/>
-          <sub><b>dsyzling</b></sub>
-        </a>
-        <br/>
-        Scala
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/kurnevsky">
-          <img src="https://github.com/kurnevsky.png" width="100px;" style="border-radius: 50%;" alt="kurnevsky"/>
-          <br/>
-          <sub><b>kurnevsky</b></sub>
-        </a>
-        <br/>
-        Scala | Rust
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/seagle0128">
-          <img src="https://github.com/seagle0128.png" width="100px;" style="border-radius: 50%;" alt="seagle0128"/>
-          <br/>
-          <sub><b>seagle0128</b></sub>
-        </a>
-        <br/>
-        Go | Python MS
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <div>
-        <a href="https://github.com/sebastiansturm">
-          <img src="https://github.com/sebastiansturm.png" width="100px;" style="border-radius: 50%;" alt="sebastiansturm"/>
-          <br/>
-          <sub><b>sebastiansturm</b></sub>
-        </a>
-        <br/>
-        lsp-mode core | C++
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/vibhavp">
-          <img src="https://github.com/vibhavp.png" width="100px;" style="border-radius: 50%;" alt="vibhavp"/>
-          <br/>
-          <sub><b>vibhavp</b></sub>
-        </a>
-        <br/>
-        lsp-mode core
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/yyoncho">
-          <img src="https://github.com/yyoncho.png" width="100px;" style="border-radius: 50%;" alt="yyoncho"/>
-          <br/>
-          <sub><b>yyoncho</b></sub>
-        </a>
-        <br/>
-        lsp-mode core | Java
-        </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/ericdallo">
-          <img src="https://github.com/ericdallo.png" width="100px;" style="border-radius: 50%;" alt="ericdallo"/>
-          <br/>
-          <sub><b>ericdallo</b></sub>
-        </a>
-        <br/>
-        Dart/Flutter | Clojure
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/danielmartin">
-          <img src="https://github.com/danielmartin.png" width="100px;" style="border-radius: 50%;" alt="danielmartin"/>
-          <br/>
-          <sub><b>danielmartin</b></sub>
-        </a>
-        <br/>
-        C++ | Swift
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <div>
-        <a href="https://github.com/kiennq">
-          <img src="https://github.com/kiennq.png" width="100px;" style="border-radius: 50%;" alt="kiennq"/>
-          <br/>
-          <sub><b>kiennq</b></sub>
-        </a>
-        <br/>
-        completions | pwsh
-      </div>
-    </td>
-    <td align="center">
-      <div>
-        <a href="https://github.com/nbfalcon">
-          <img src="https://github.com/nbfalcon.png" width="100px;" style="border-radius: 50%;" alt="nbfalcon"/>
-          <br/>
-          <sub><b>nbfalcon</b></sub>
-        </a>
-        <br/>
-        lsp-mode core | iedit
-      </div>
-    </td>
-  </tr>
-</table>
+                <h1 id="python">Python<a class="headerlink" href="#python" title="Permanent link">#</a></h1>
+<h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
+<p>For more information about the LSP server, check <a href="https://github.com/python-lsp/python-lsp-server">pylsp</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
+<p><code>pip install 'python-lsp-server[all]'</code></p>
+<h3 id="debugger-yes">Debugger: Yes<a class="headerlink" href="#debugger-yes" title="Permanent link">#</a></h3>
+<h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-clients-pylsp-library-directories"><code>lsp-clients-pylsp-library-directories</code><a class="headerlink" href="#lsp-clients-pylsp-library-directories" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>(/usr/)</code></p>
+<p>List of directories which will be considered to be libraries.</p>
+<hr />
+<h3 id="lsp-pylsp-configuration-sources"><code>lsp-pylsp-configuration-sources</code><a class="headerlink" href="#lsp-pylsp-configuration-sources" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>[flake8]</code></p>
+<p>List of configuration sources to use.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-autopep8-enabled"><code>lsp-pylsp-plugins-autopep8-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-autopep8-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-config"><code>lsp-pylsp-plugins-flake8-config</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-config" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>A path to a config file that will be the only config file read and used.
+This will cause Flake8 to ignore all other config files that exist.</p>
+<p>NOTE: other parameters as <code>lsp-pylsp-plugins-flake8-max-line-length</code> take
+precedence over parameters referenced in config.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-enabled"><code>lsp-pylsp-plugins-flake8-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-exclude"><code>lsp-pylsp-plugins-flake8-exclude</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-exclude" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>List of glob patterns to exclude from checks.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-filename"><code>lsp-pylsp-plugins-flake8-filename</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-filename" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>List of glob patterns to include for checks.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-hang-closing"><code>lsp-pylsp-plugins-flake8-hang-closing</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-hang-closing" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Toggle whether pycodestyle should enforce matching the indentation of the
+opening bracket`s line. When you specify this, it will prefer that you hang the
+closing bracket rather than match the indentation.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-ignore"><code>lsp-pylsp-plugins-flake8-ignore</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-ignore" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>A list of codes to ignore.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-max-line-length"><code>lsp-pylsp-plugins-flake8-max-line-length</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-max-line-length" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>integer</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Set the maximum length that any line (with some exceptions) may be.
+Exceptions include lines that are either strings or comments which are
+entirely URLs.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-flake8-select"><code>lsp-pylsp-plugins-flake8-select</code><a class="headerlink" href="#lsp-pylsp-plugins-flake8-select" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Specify the list of error codes you wish Flake8 to report. Similarly to
+<code>lsp-pylsp-plugins-flake8-ignore</code>. You can specify a portion of an error code to
+get all that start with that string. For example, you can use E, E4, E43, and
+E431</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-completion-enabled"><code>lsp-pylsp-plugins-jedi-completion-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-completion-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-completion-fuzzy"><code>lsp-pylsp-plugins-jedi-completion-fuzzy</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-completion-fuzzy" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>If enabled, uses fuzzy completion in jedi. Requires pylsp &gt;= 0.32.0
+Can hit performance, as well as lsp-mode implements its own fuzzy search on
+completion items.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-completion-include-class-objects"><code>lsp-pylsp-plugins-jedi-completion-include-class-objects</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-completion-include-class-objects" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>If enabled, adds class objects to completion in order to avoid snippet
+with init args.</p>
+<p>Has no effect if <code>lsp-pylsp-plugins-jedi-completion-include-params</code> is disabled.
+Requires pylsp &gt;= 0.33.0</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-completion-include-params"><code>lsp-pylsp-plugins-jedi-completion-include-params</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-completion-include-params" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Auto-completes methods and classes with tabstops for each
+parameter.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-definition-enabled"><code>lsp-pylsp-plugins-jedi-definition-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-definition-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-definition-follow-builtin-imports"><code>lsp-pylsp-plugins-jedi-definition-follow-builtin-imports</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-definition-follow-builtin-imports" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>If follow_imports is True will decide if it follow builtin
+imports.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-definition-follow-imports"><code>lsp-pylsp-plugins-jedi-definition-follow-imports</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-definition-follow-imports" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>The goto call will follow imports.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-environment"><code>lsp-pylsp-plugins-jedi-environment</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-environment" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Specify the environment that jedi runs on where <environmeent>/bin/python
+should be the python executable. This option will be prioritized over
+<code>lsp-pylsp-plugins-jedi-use-pyenv-environment</code>.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-hover-enabled"><code>lsp-pylsp-plugins-jedi-hover-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-hover-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-references-enabled"><code>lsp-pylsp-plugins-jedi-references-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-references-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-signature-help-enabled"><code>lsp-pylsp-plugins-jedi-signature-help-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-signature-help-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-symbols-all-scopes"><code>lsp-pylsp-plugins-jedi-symbols-all-scopes</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-symbols-all-scopes" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>If True lists the names of all scopes instead of only the
+module namespace.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-symbols-enabled"><code>lsp-pylsp-plugins-jedi-symbols-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-symbols-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-jedi-use-pyenv-environment"><code>lsp-pylsp-plugins-jedi-use-pyenv-environment</code><a class="headerlink" href="#lsp-pylsp-plugins-jedi-use-pyenv-environment" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>If enabled, pass the environment got by pyenv to jedi</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-mccabe-enabled"><code>lsp-pylsp-plugins-mccabe-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-mccabe-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-mccabe-threshold"><code>lsp-pylsp-plugins-mccabe-threshold</code><a class="headerlink" href="#lsp-pylsp-plugins-mccabe-threshold" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>number</code></p>
+<p><em>Default:</em> <code>15</code></p>
+<p>The minimum threshold that triggers warnings about cyclomatic
+complexity.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-preload-enabled"><code>lsp-pylsp-plugins-preload-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-preload-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-preload-modules"><code>lsp-pylsp-plugins-preload-modules</code><a class="headerlink" href="#lsp-pylsp-plugins-preload-modules" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>List of modules to import on startup</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-enabled"><code>lsp-pylsp-plugins-pycodestyle-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-exclude"><code>lsp-pylsp-plugins-pycodestyle-exclude</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-exclude" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Exclude files or directories which match these patterns.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-filename"><code>lsp-pylsp-plugins-pycodestyle-filename</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-filename" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>When parsing directories, only check filenames matching these
+patterns.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-hang-closing"><code>lsp-pylsp-plugins-pycodestyle-hang-closing</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-hang-closing" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Hang closing bracket instead of matching indentation of
+opening bracket`s line.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-ignore"><code>lsp-pylsp-plugins-pycodestyle-ignore</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-ignore" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Ignore errors and warnings</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-max-line-length"><code>lsp-pylsp-plugins-pycodestyle-max-line-length</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-max-line-length" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>number</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Set maximum allowed line length.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pycodestyle-select"><code>lsp-pylsp-plugins-pycodestyle-select</code><a class="headerlink" href="#lsp-pylsp-plugins-pycodestyle-select" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Select errors and warnings</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-add-ignore"><code>lsp-pylsp-plugins-pydocstyle-add-ignore</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-add-ignore" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Ignore errors and warnings in addition to the specified
+convention.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-add-select"><code>lsp-pylsp-plugins-pydocstyle-add-select</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-add-select" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Select errors and warnings in addition to the specified
+convention.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-convention"><code>lsp-pylsp-plugins-pydocstyle-convention</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-convention" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (:tag pep257 numpy))</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Choose the basic list of checked errors by specifying an
+existing convention.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-enabled"><code>lsp-pylsp-plugins-pydocstyle-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-ignore"><code>lsp-pylsp-plugins-pydocstyle-ignore</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-ignore" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Ignore errors and warnings</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-match"><code>lsp-pylsp-plugins-pydocstyle-match</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-match" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>(?!test_).*\.py</code></p>
+<p>Check only files that exactly match the given regular
+expression; default is to match files that don<code>t start with</code>test_<code>but end with</code>.py`.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-match-dir"><code>lsp-pylsp-plugins-pydocstyle-match-dir</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-match-dir" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>[^\.].*</code></p>
+<p>Search only dirs that exactly match the given regular
+expression; default is to match dirs which do not begin with a
+dot.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pydocstyle-select"><code>lsp-pylsp-plugins-pydocstyle-select</code><a class="headerlink" href="#lsp-pylsp-plugins-pydocstyle-select" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Select errors and warnings</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pyflakes-enabled"><code>lsp-pylsp-plugins-pyflakes-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-pyflakes-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pylint-args"><code>lsp-pylsp-plugins-pylint-args</code><a class="headerlink" href="#lsp-pylsp-plugins-pylint-args" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Default:</em> <code>[]</code></p>
+<p>Arguments, passed to pylint</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-pylint-enabled"><code>lsp-pylsp-plugins-pylint-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-pylint-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-rope-completion-enabled"><code>lsp-pylsp-plugins-rope-completion-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-rope-completion-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-plugins-yapf-enabled"><code>lsp-pylsp-plugins-yapf-enabled</code><a class="headerlink" href="#lsp-pylsp-plugins-yapf-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable the plugin.</p>
+<hr />
+<h3 id="lsp-pylsp-rename-backend"><code>lsp-pylsp-rename-backend</code><a class="headerlink" href="#lsp-pylsp-rename-backend" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (const :tag jedi jedi) (const :tag rope rope))</code></p>
+<p><em>Default:</em> <code>jedi</code></p>
+<p>Choose renaming backend.</p>
+<p>Jedi is preferred but only works for python &gt;= 3.6 and pylsp &gt;= 0.32.0
+Beware that Jedi is lazy and doesn`t scan the whole project.
+So it will rename only references it can find.</p>
+<hr />
+<h3 id="lsp-pylsp-rope-extension-modules"><code>lsp-pylsp-rope-extension-modules</code><a class="headerlink" href="#lsp-pylsp-rope-extension-modules" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Builtin and c-extension modules that are allowed to be
+imported and inspected by rope.</p>
+<hr />
+<h3 id="lsp-pylsp-rope-rope-folder"><code>lsp-pylsp-rope-rope-folder</code><a class="headerlink" href="#lsp-pylsp-rope-rope-folder" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>The name of the folder in which rope stores project
+configurations and data. Pass <code>nil</code> for not using such a folder
+at all.</p>
+<hr />
+<h3 id="lsp-pylsp-server-command"><code>lsp-pylsp-server-command</code><a class="headerlink" href="#lsp-pylsp-server-command" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>(pylsp)</code></p>
+<p>Command to start pylsp.</p>
+<hr />
                 
                   
                     
@@ -2839,14 +3164,28 @@ primary working on/responsible for.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../lsp-pyls/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                None
+              </div>
+            </div>
+          </a>
         
-          <a href="page/installation/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../lsp-pyright/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Installation
+                Lsp pyright
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -2904,20 +3243,20 @@ primary working on/responsible for.</p>
       
     </div>
     
-      <script src="assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="js/expanded_nav.js"></script>
+        <script src="../../js/expanded_nav.js"></script>
       
     
   </body>
