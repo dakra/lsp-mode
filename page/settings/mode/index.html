@@ -889,6 +889,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-default-create-error-handler-fn" class="md-nav__link">
+    lsp-default-create-error-handler-fn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-details-face" class="md-nav__link">
     lsp-details-face
   </a>
@@ -1129,6 +1136,13 @@
         <li class="md-nav__item">
   <a href="#lsp-log-io" class="md-nav__link">
     lsp-log-io
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-log-io-allowlist-methods" class="md-nav__link">
+    lsp-log-io-allowlist-methods
   </a>
   
 </li>
@@ -1712,8 +1726,21 @@
 
 
   <li class="md-nav__item">
-    <a href="../../lsp-csharp.md" class="md-nav__link">
-      C#
+    <a href="../../lsp-csharp-omnisharp/" class="md-nav__link">
+      C# (omnisharp-roslyn)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../lsp-csharp-ls/" class="md-nav__link">
+      C# (csharp-ls)
     </a>
   </li>
 
@@ -3202,6 +3229,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-default-create-error-handler-fn" class="md-nav__link">
+    lsp-default-create-error-handler-fn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-details-face" class="md-nav__link">
     lsp-details-face
   </a>
@@ -3442,6 +3476,13 @@
         <li class="md-nav__item">
   <a href="#lsp-log-io" class="md-nav__link">
     lsp-log-io
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-log-io-allowlist-methods" class="md-nav__link">
+    lsp-log-io-allowlist-methods
   </a>
   
 </li>
@@ -3778,6 +3819,13 @@ This flag affects only servers which do not support incremental updates.</p>
 <p><em>Default:</em> <code>1.0</code></p>
 <p>Time to wait before sending full sync synchronization after buffer modification.</p>
 <hr />
+<h3 id="lsp-default-create-error-handler-fn"><code>lsp-default-create-error-handler-fn</code><a class="headerlink" href="#lsp-default-create-error-handler-fn" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>function</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Default error handler customization.
+Handler should give METHOD as argument and return function of one argument
+ERROR.</p>
+<hr />
 <h3 id="lsp-details-face"><code>lsp-details-face</code><a class="headerlink" href="#lsp-details-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :height 0.8 :inherit shadow))</code></p>
@@ -3907,7 +3955,7 @@ Renaming can be done using <code>lsp-rename</code>.</p>
 <hr />
 <h3 id="lsp-file-watch-ignored-directories"><code>lsp-file-watch-ignored-directories</code><a class="headerlink" href="#lsp-file-watch-ignored-directories" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
-<p><em>Default:</em> <code>([/\\]\.git\' [/\\]\.github\' [/\\]\.circleci\' [/\\]\.hg\' [/\\]\.bzr\' [/\\]_darcs\' [/\\]\.svn\' [/\\]_FOSSIL_\' [/\\]\.idea\' [/\\]\.ensime_cache\' [/\\]\.eunit\' [/\\]node_modules [/\\]\.yarn\' [/\\]\.fslckout\' [/\\]\.tox\' [/\\]dist\' [/\\]dist-newstyle\' [/\\]\.stack-work\' [/\\]\.bloop\' [/\\]\.metals\' [/\\]target\' [/\\]\.ccls-cache\' [/\\]\.vscode\' [/\\]\.venv\' [/\\]\.deps\' [/\\]build-aux\' [/\\]autom4te.cache\' [/\\]\.reference\' [/\\]\.lsp\' [/\\]\.clj-kondo\' [/\\]\.shadow-cljs\' [/\\]\.babel_cache\' [/\\]\.cpcache\' [/\\]bin/Debug\' [/\\]obj\' [/\\]_opam\' [/\\]_build\' [/\\]\.direnv\')</code></p>
+<p><em>Default:</em> <code>([/\\]\.git\' [/\\]\.github\' [/\\]\.circleci\' [/\\]\.hg\' [/\\]\.bzr\' [/\\]_darcs\' [/\\]\.svn\' [/\\]_FOSSIL_\' [/\\]\.idea\' [/\\]\.ensime_cache\' [/\\]\.eunit\' [/\\]node_modules [/\\]\.yarn\' [/\\]\.fslckout\' [/\\]\.tox\' [/\\]dist\' [/\\]dist-newstyle\' [/\\]\.stack-work\' [/\\]\.bloop\' [/\\]\.metals\' [/\\]target\' [/\\]\.ccls-cache\' [/\\]\.vscode\' [/\\]\.venv\' [/\\]\.deps\' [/\\]build-aux\' [/\\]autom4te.cache\' [/\\]\.reference\' [/\\]\.lsp\' [/\\]\.clj-kondo\' [/\\]\.shadow-cljs\' [/\\]\.babel_cache\' [/\\]\.cpcache\' [/\\]\checkouts\' [/\\]bin/Debug\' [/\\]obj\' [/\\]_opam\' [/\\]_build\' [/\\]\.direnv\')</code></p>
 <p>List of regexps matching directory paths which won`t be monitored when
 creating file watches. Customization of this variable is only honored at
 the global level or at a root of an lsp workspace.</p>
@@ -3984,6 +4032,11 @@ Used in <code>lsp-select-installation-buffer</code>.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>If non-nil, log all messages from the language server to a <em>lsp-log</em> buffer.</p>
+<hr />
+<h3 id="lsp-log-io-allowlist-methods"><code>lsp-log-io-allowlist-methods</code><a class="headerlink" href="#lsp-log-io-allowlist-methods" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>The methods to filter before print to lsp-log-io.</p>
 <hr />
 <h3 id="lsp-log-max"><code>lsp-log-max</code><a class="headerlink" href="#lsp-log-max" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const :tag Disable nil) (integer :tag lines) (const :tag Unlimited t))</code></p>
@@ -4157,7 +4210,7 @@ The hook will receive two parameters list of added and removed folders.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2021</span>
     
   </small>
 </div>
