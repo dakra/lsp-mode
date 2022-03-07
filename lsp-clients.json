@@ -25,6 +25,15 @@
     "debugger": "Not relevant"
   },
   {
+    "name": "ansible",
+    "full-name": "Ansible",
+    "server-name": "ansible-language-server",
+    "server-url": "https://github.com/ansible/ansible-language-server",
+    "installation": "npm i -g @ansible/ansible-language-server",
+    "lsp-install-server": "ansible-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "bash",
     "full-name": "Bash",
     "server-name": "bash-language-server",
@@ -158,6 +167,15 @@
     "debugger": "Not available"
   },
   {
+    "name": "emmet",
+    "full-name": "Emmet",
+    "server-name": "emmet-ls",
+    "server-url": "https://github.com/aca/emmet-ls",
+    "installation": "npm i -g emmet-ls",
+    "lsp-install-server": "emmet-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "erlang",
     "full-name": "Erlang",
     "server-name": "erlang_ls",
@@ -255,6 +273,13 @@
     "server-url": "https://github.com/vscode-langservers/vscode-html-languageserver",
     "installation": "npm install -g vscode-html-languageserver-bin",
     "lsp-install-server": "html-ls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "idris",
+    "full-name": "Idris",
+    "server-name": "idris2-lsp",
+    "installation-url": "https://github.com/idris-community/idris2-lsp",
     "debugger": "Not available"
   },
   {
