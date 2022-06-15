@@ -2654,15 +2654,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-import-merge-behaviour" class="md-nav__link">
-    lsp-rust-analyzer-import-merge-behaviour
+  <a href="#lsp-rust-analyzer-import-prefix" class="md-nav__link">
+    lsp-rust-analyzer-import-prefix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-import-prefix" class="md-nav__link">
-    lsp-rust-analyzer-import-prefix
+  <a href="#lsp-rust-analyzer-imports-merge-glob" class="md-nav__link">
+    lsp-rust-analyzer-imports-merge-glob
   </a>
   
 </li>
@@ -2698,6 +2698,13 @@
           <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-inlay-type-format" class="md-nav__link">
     lsp-rust-analyzer-inlay-type-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-library-directories" class="md-nav__link">
+    lsp-rust-analyzer-library-directories
   </a>
   
 </li>
@@ -4020,15 +4027,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-import-merge-behaviour" class="md-nav__link">
-    lsp-rust-analyzer-import-merge-behaviour
+  <a href="#lsp-rust-analyzer-import-prefix" class="md-nav__link">
+    lsp-rust-analyzer-import-prefix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-import-prefix" class="md-nav__link">
-    lsp-rust-analyzer-import-prefix
+  <a href="#lsp-rust-analyzer-imports-merge-glob" class="md-nav__link">
+    lsp-rust-analyzer-imports-merge-glob
   </a>
   
 </li>
@@ -4064,6 +4071,13 @@
           <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-inlay-type-format" class="md-nav__link">
     lsp-rust-analyzer-inlay-type-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-library-directories" class="md-nav__link">
+    lsp-rust-analyzer-library-directories
   </a>
   
 </li>
@@ -4234,7 +4248,7 @@
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <hr />
 <p>author: yyoncho
-disqus: emacs-lsp
+template: comment.html
 root_file: docs/manual-language-docs/lsp-rust-analyzer.md</p>
 <hr />
 <h2 id="server-note">Server note<a class="headerlink" href="#server-note" title="Permanent link">#</a></h2>
@@ -4323,7 +4337,7 @@ modifying the signature that is displayed by eldoc.</p>
     :initialization-options &#39;lsp-rust-analyzer--make-init-options
     :notification-handlers (ht&lt;-alist lsp-rust-notification-handlers)
     :action-handlers (ht (&quot;rust-analyzer.runSingle&quot; #&#39;lsp-rust--analyzer-run-single))
-    :library-folders-fn (lambda (_workspace) lsp-rust-library-directories)
+    :library-folders-fn (lambda (_workspace) lsp-rust-analyzer-library-directories)
     :after-open-fn (lambda ()
                      (when lsp-rust-analyzer-server-display-inlay-hints
                        (lsp-rust-analyzer-inlay-hints-mode)))
@@ -4556,15 +4570,6 @@ to a closure.ppOnly applies to closures with blocks, same as
 https://rust-analyzer.github.io/manual.html#auto-import.
  Groups are separated by newlines.</p>
 <hr />
-<h3 id="lsp-rust-analyzer-import-merge-behaviour"><code>lsp-rust-analyzer-import-merge-behaviour</code><a class="headerlink" href="#lsp-rust-analyzer-import-merge-behaviour" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const none) (const full) (const last))</code></p>
-<p><em>Default:</em> <code>full</code></p>
-<p>The strategy to use when inserting new imports or merging imports.
-Valid values are:
- - "none": No merging
- - "full": Merge all layers of the import trees
- - "last": Only merge the last layer of the import trees</p>
-<hr />
 <h3 id="lsp-rust-analyzer-import-prefix"><code>lsp-rust-analyzer-import-prefix</code><a class="headerlink" href="#lsp-rust-analyzer-import-prefix" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const plain) (const by_self) (const by_crate))</code></p>
 <p><em>Default:</em> <code>plain</code></p>
@@ -4575,6 +4580,11 @@ one <code>super</code> prefix if the parent module contains the requested item.
  - "by_self": Prefix all import paths with <code>self</code> if they don<code>t begin with</code>self<code>,</code>super<code>,</code>crate<code>or a crate name.
  - "by_crate": Force import paths to be absolute by always starting
 them with</code>crate` or the crate name they refer to.</p>
+<hr />
+<h3 id="lsp-rust-analyzer-imports-merge-glob"><code>lsp-rust-analyzer-imports-merge-glob</code><a class="headerlink" href="#lsp-rust-analyzer-imports-merge-glob" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Whether to allow import insertion to merge new imports into single path glob imports like <code>use std::fmt::*;</code>.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-inlay-face"><code>lsp-rust-analyzer-inlay-face</code><a class="headerlink" href="#lsp-rust-analyzer-inlay-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
@@ -4604,6 +4614,11 @@ non-nil).</p>
 <p>Format string for variable inlays (part of the inlay face,
 used only if lsp-rust-analyzer-server-format-inlay-hints is
 non-nil).</p>
+<hr />
+<h3 id="lsp-rust-analyzer-library-directories"><code>lsp-rust-analyzer-library-directories</code><a class="headerlink" href="#lsp-rust-analyzer-library-directories" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat string)</code></p>
+<p><em>Default:</em> <code>(~/.cargo/registry/src ~/.rustup/toolchains)</code></p>
+<p>List of directories which will be considered to be libraries.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-linked-projects"><code>lsp-rust-analyzer-linked-projects</code><a class="headerlink" href="#lsp-rust-analyzer-linked-projects" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>lsp-string-vector</code></p>
@@ -4690,7 +4705,7 @@ compiling unnecessary things.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2022</span>
       
     
   </small>
