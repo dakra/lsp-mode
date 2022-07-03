@@ -2766,6 +2766,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-rustfmt-rangeformatting-enable" class="md-nav__link">
+    lsp-rust-analyzer-rustfmt-rangeformatting-enable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-server-command" class="md-nav__link">
     lsp-rust-analyzer-server-command
   </a>
@@ -4139,6 +4146,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-rustfmt-rangeformatting-enable" class="md-nav__link">
+    lsp-rust-analyzer-rustfmt-rangeformatting-enable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-server-command" class="md-nav__link">
     lsp-rust-analyzer-server-command
   </a>
@@ -4584,7 +4598,8 @@ them with</code>crate` or the crate name they refer to.</p>
 <h3 id="lsp-rust-analyzer-imports-merge-glob"><code>lsp-rust-analyzer-imports-merge-glob</code><a class="headerlink" href="#lsp-rust-analyzer-imports-merge-glob" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Whether to allow import insertion to merge new imports into single path glob imports like <code>use std::fmt::*;</code>.</p>
+<p>Whether to allow import insertion to merge new imports into single path
+glob imports like <code>use std::fmt::*;</code>.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-inlay-face"><code>lsp-rust-analyzer-inlay-face</code><a class="headerlink" href="#lsp-rust-analyzer-inlay-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
@@ -4665,6 +4680,12 @@ Implies <code>lsp-rust-analyzer-cargo-run-build-scripts</code></p>
 <p>Advanced option, fully override the command rust-analyzer uses
 for formatting.</p>
 <hr />
+<h3 id="lsp-rust-analyzer-rustfmt-rangeformatting-enable"><code>lsp-rust-analyzer-rustfmt-rangeformatting-enable</code><a class="headerlink" href="#lsp-rust-analyzer-rustfmt-rangeformatting-enable" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enables the use of rustfmt<code>s unstable range formatting command for the</code>textDocument/rangeFormatting` request. The rustfmt option is unstable and only
+available on a nightly build.</p>
+<hr />
 <h3 id="lsp-rust-analyzer-server-command"><code>lsp-rust-analyzer-server-command</code><a class="headerlink" href="#lsp-rust-analyzer-server-command" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>(rust-analyzer)</code></p>
@@ -4705,7 +4726,7 @@ compiling unnecessary things.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2022</span>
       
     
   </small>
