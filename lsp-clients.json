@@ -365,6 +365,15 @@
     "debugger": "Not available"
   },
   {
+    "name": "gpr",
+    "full-name": "GNAT Project",
+    "server-name": "ada_language_server",
+    "server-url": "https://github.com/AdaCore/ada_language_server",
+    "installation-url": "https://github.com/AdaCore/ada_language_server#install",
+    "lsp-install-server": "gpr-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "grammarly",
     "full-name": "Grammarly",
     "server-name": "@emacs-grammarly/grammarly-languageserver",
@@ -580,6 +589,14 @@
     "server-name": "marksman",
     "server-url": "https://github.com/artempyanykh/marksman",
     "installation-url": "https://github.com/artempyanykh/marksman",
+    "debugger": "Not available"
+  },
+  {
+    "name": "meson",
+    "full-name": "Meson",
+    "server-name": "mesonlsp",
+    "server-url": "https://github.com/JCWasmx86/mesonlsp",
+    "installation-url": "https://github.com/JCWasmx86/mesonlsp",
     "debugger": "Not available"
   },
   {
@@ -979,6 +996,14 @@
     "server-name": "sorbet",
     "server-url": "https://github.com/sorbet/sorbet",
     "installation-url": "https://sorbet.org/docs/adopting#step-1-install-dependencies",
+    "debugger": "Not available"
+  },
+  {
+    "name": "sql",
+    "full-name": "SQL (sql)",
+    "server-name": "sql-language-server",
+    "server-url": "https://github.com/joe-re/sql-language-server",
+    "installation": "npm i -g sql-language-server",
     "debugger": "Not available"
   },
   {
